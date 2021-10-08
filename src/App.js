@@ -5,6 +5,7 @@ import React from 'react';
 import { ListComponents } from "./ListComponent";
 import { ClassComponentTable } from './ClassComponent';
 import { FunctionComponentTable } from './FunctionComponent';
+import { Dialouge } from './DialougeComponent';
 
 // imports related to DND
 import { DragDropContext } from 'react-beautiful-dnd';
@@ -102,6 +103,8 @@ function App() {
             </div>
           </DragDropContext>
         </div>
+        <hr/>
+        <Dialouge />
       </header>
     </div>
   );
