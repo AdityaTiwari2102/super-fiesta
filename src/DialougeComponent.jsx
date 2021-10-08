@@ -39,6 +39,13 @@ export function Dialouge() {
       'When achieving your goal is more important than partying, welcome to the 1%.',
       'Sometimes good guys gotta do bad things to make the bad guys pay.'
     ]
+    const len = Dialouges.length
+    const dialouge = Dialouges[Math.floor(Math.random() * len)]
+    const sp = new SpeechSynthesisUtterance(dialouge);
+    sp.lang = 'en-UK';
+    // For different voices use getVoices() method.
+    // [sp.voice] = speechSynthesis.getVoices();
+    speechSynthesis.speak(sp);
   }
 
   return (
